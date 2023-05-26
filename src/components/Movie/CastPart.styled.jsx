@@ -5,6 +5,7 @@ export const CastItem = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+  padding: 0;
 `;
 
 export const CastItemLi = styled.li`
@@ -15,7 +16,7 @@ export const CastItemLi = styled.li`
 
 export const CastItemImage = styled.img`
   width: 185px;
-  height: 278px;
+  height: 260px;
   margin-right: 20px;
 `;
 
@@ -31,4 +32,5 @@ export const CastItemTextP = styled.p`
   margin-bottom: 10px;
   margin-top: 0;
   font-weight: bold;
+  text-align: center;
 `;

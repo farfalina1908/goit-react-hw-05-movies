@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { getMoviesQuery } from '../../services/api';
 import SearchBar from '../../components/SearchBar';
 import MovieQuery from '../../components/MovieQuery';
+import { MovieContainer } from './MoviesPage.styled';
 
 const MoviesPage = () => {
   const [movies, setMovies] = useState([]);
@@ -30,10 +31,10 @@ const MoviesPage = () => {
   };
 
   return (
-    <div>
+    <MovieContainer>
       <SearchBar onSubmit={handleSubmit} />
       <MovieQuery movies={movies} />
-    </div>
+    </MovieContainer>
   );
 };
 
